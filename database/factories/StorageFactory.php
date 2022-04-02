@@ -17,7 +17,8 @@ class StorageFactory extends Factory
     public function definition()
     {
         return [
-            //
+           'description' => $this->faker->sentence(7),
+            'name' => $this->faker->word
         ];
     }
 }
