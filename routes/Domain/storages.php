@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProductController;
-use App\Http\Livewire\Products;
+use App\Http\Controllers\StorageController;
+use App\Http\Controllers\UserController;
+use Domain\Users\Users\Actions\StoreUserAction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,5 +16,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/products', ProductController::class . "@show")->name('show');
-Route::get('/products/table', Products::class)->name('table');
+Route::get('/storage', StorageController::class . "@show")->name('show');
